@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonogram Puzzle - CW-03</title>
+    <link rel="stylesheet" href="nonograms.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nonogram Puzzle</h1>
+        <p class="instructions">
+            Click tiles to fill them in black. Click again to toggle them off. 
+            Try to solve the puzzle using the number clues!
+        </p>
+        
+        <div class="puzzle-container">
+            <!-- Column clues -->
+            <div class="column-clues">
+                <div class="clue-cell"></div>
+                <div class="clue-cell">1</div>
+                <div class="clue-cell">1<br>1</div>
+                <div class="clue-cell">3</div>
+                <div class="clue-cell">1<br>1</div>
+                <div class="clue-cell">1</div>
+            </div>
+            
+            <!-- Row clues and grid -->
+            <div class="puzzle-grid">
+                <!-- Row 1 -->
+                <div class="row">
+                    <div class="row-clue">1</div>
+                    <div class="box" data-row="0" data-col="0"></div>
+                    <div class="box" data-row="0" data-col="1"></div>
+                    <div class="box" data-row="0" data-col="2"></div>
+                    <div class="box" data-row="0" data-col="3"></div>
+                    <div class="box" data-row="0" data-col="4"></div>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="row">
+                    <div class="row-clue">1 1</div>
+                    <div class="box" data-row="1" data-col="0"></div>
+                    <div class="box" data-row="1" data-col="1"></div>
+                    <div class="box" data-row="1" data-col="2"></div>
+                    <div class="box" data-row="1" data-col="3"></div>
+                    <div class="box" data-row="1" data-col="4"></div>
+                </div>
+                
+                <!-- Row 3 -->
+                <div class="row">
+                    <div class="row-clue">3</div>
+                    <div class="box" data-row="2" data-col="0"></div>
+                    <div class="box" data-row="2" data-col="1"></div>
+                    <div class="box" data-row="2" data-col="2"></div>
+                    <div class="box" data-row="2" data-col="3"></div>
+                    <div class="box" data-row="2" data-col="4"></div>
+                </div>
+                
+                <!-- Row 4 -->
+                <div class="row">
+                    <div class="row-clue">1 1</div>
+                    <div class="box" data-row="3" data-col="0"></div>
+                    <div class="box" data-row="3" data-col="1"></div>
+                    <div class="box" data-row="3" data-col="2"></div>
+                    <div class="box" data-row="3" data-col="3"></div>
+                    <div class="box" data-row="3" data-col="4"></div>
+                </div>
+                
+                <!-- Row 5 -->
+                <div class="row">
+                    <div class="row-clue">1</div>
+                    <div class="box" data-row="4" data-col="0"></div>
+                    <div class="box" data-row="4" data-col="1"></div>
+                    <div class="box" data-row="4" data-col="2"></div>
+                    <div class="box" data-row="4" data-col="3"></div>
+                    <div class="box" data-row="4" data-col="4"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="clearButton">Clear</button>
+            <button id="toggleMode">Toggle Mode: Fill</button>
+        </div>
+        
+        <div class="instructions-detailed">
+            <h3>How to Play:</h3>
+            <ul>
+                <li><strong>Left Click:</strong> Fill/unfill tiles</li>
+                <li><strong>Right Click:</strong> Mark with X (or toggle mode)</li>
+                <li><strong>Drag:</strong> Fill multiple tiles in one motion</li>
+                <li><strong>Numbers:</strong> Show how many consecutive filled squares are in each row/column</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="nonograms.js"></script>
+</body>
+</html>
