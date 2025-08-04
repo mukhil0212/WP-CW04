@@ -268,10 +268,10 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Initializing Nonogram Puzzle...');
         
         // Start with Part I for testing, then progress through parts
-        // setupInitialClickHandlers(); // Uncomment for Part I only
+        setupInitialClickHandlers(); // Part I: Alert on click
         // setupBasicFillHandlers();    // Uncomment for Part II only
         
-        // Full implementation (Parts III-VII)
+        // Full implementation (Parts III-VII)  
         setupToggleHandlers();
         setupClearButton();
         setupToggleModeButton();
